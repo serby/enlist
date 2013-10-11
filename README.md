@@ -20,25 +20,28 @@ Start server
 
 #### Request
 
-    POST /sub
+    POST /list
 
     {
-      "id": "1"
+      "id": "1",
+      "confirm": "true"
     }
 
 #### Response
 
     {
-      "url": "/sub/1",
-      "from": "sub-1@enlist.org",
-      "confirm": "true"
+      "url": "/list/1",
+      "from": "sub-1@enlist.org"
     }
 
 ### Subscribe to a list
 
 #### Request
 
-    POST /sub/1/paul@serby.net
+    POST /list/1/
+    {
+        "email": "paul@serby.net"
+    }
 
 #### Response
 201
@@ -47,7 +50,7 @@ Start server
 
 #### Request
 
-    PUT /sub/1/paul@serby.net
+    PUT /list/1/paul@serby.net
 
     {
       "hash": "<HASH>"
@@ -69,7 +72,7 @@ Start server
 
 #### Request
 
-    DELETE /sub/1/paul@serby.net?hash=<HASH>
+    DELETE /list/1/paul@serby.net?hash=<HASH>
 
 #### Response
 2??
@@ -78,7 +81,7 @@ Start server
 
 #### Request
 
-    POST /sub/1
+    POST /list/1
 
     {
       "message": "message goes here"
