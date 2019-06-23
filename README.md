@@ -2,7 +2,7 @@
 
 Subscribe to get emails on certain events
 
-[![build status](https://secure.travis-ci.org/serby/enlist.png)](http://travis-ci.org/serby/enlist)
+[![build status](https://secure.travis-ci.org/serby/enlist.png)](http://travis-ci.org/serby/enlist) [![Greenkeeper badge](https://badges.greenkeeper.io/serby/enlist.svg)](https://greenkeeper.io/)
 
 ## Installation
 
